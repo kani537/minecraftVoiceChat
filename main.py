@@ -45,9 +45,7 @@ def recognize():
 			print("Could not request results from Google Speech Recognition service; {0}".format(e))
     
 def main():
-	while True:
-		if keyboard.is_pressed("v"):
-			recognize()
-			break
+		keyboard.wait('v')
+		recognize()
 
 main()
